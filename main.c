@@ -9,7 +9,7 @@ char vx = 1;
 char vy = 1;
 
 int main() {
-    if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
+    if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS) != 0) {
         printf("error initializing SDL: %s\n", SDL_GetError());
         return 1;
     }
